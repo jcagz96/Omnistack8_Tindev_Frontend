@@ -29,7 +29,7 @@ export default function Main({ match }){                 //match tem todos os pa
 
     useEffect(()=>{
         
-        const socket = io('http://localhost:3333', {
+        const socket = io('https://hidden-mountain-22247.herokuapp.com', {
             query: { user: match.params.id}                  //2º argumento que pode ser enviado na conexao
         })
 
